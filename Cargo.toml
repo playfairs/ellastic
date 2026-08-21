@@ -1,0 +1,50 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/core",
+  "crates/errors",
+  "crates/config",
+  "crates/logging",
+  "crates/utils",
+  "crates/bytes",
+  "crates/image",
+  "crates/audio",
+  "crates/media",
+  "crates/codecs",
+  "crates/glitch",
+  "crates/effects",
+  "crates/pipeline",
+  "crates/lua",
+  "crates/project",
+  "crates/export",
+  "crates/ui",
+  "crates/cli",
+  "crates/app",
+]
+
+[workspace.dependencies]
+mlua = { version = "0.9", features = ["lua54", "module", "serialize"] }
+egui = "0.28"
+eframe = { version = "0.28", features = ["default_fonts", "glow"] }
+ffmpeg-next = "7.0"
+image = "0.25"
+hound = "3.5"
+rayon = "1.10"
+rand = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+anyhow = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+directories = "5.0"
+rfd = "0.14"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[profile.dev]
+debug = true

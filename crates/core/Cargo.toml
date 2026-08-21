@@ -1,0 +1,19 @@
+[package]
+name = "ellastic-core"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0"
+authors = ["playfairs"]
+repository = "https://github.com/playfairs/ellastic"
+homepage = "https://tiffiny.org"
+
+[dependencies]
+ellastic-errors = { path = "../errors" }
+ellastic-config = { path = "../config" }
+ellastic-logging = { path = "../logging" }
+ellastic-utils = { path = "../utils" }
+serde = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+rayon = { workspace = true }
+uuid = { version = "1.0", features = ["v4"] }

@@ -1,0 +1,16 @@
+[package]
+name = "ellastic-image"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0"
+authors = ["playfairs"]
+repository = "https://github.com/playfairs/ellastic"
+homepage = "https://tiffiny.org"
+
+[dependencies]
+ellastic-errors = { path = "../errors" }
+ellastic-utils = { path = "../utils" }
+ellastic-bytes = { path = "../bytes" }
+image = { workspace = true }
+rayon = { workspace = true }
+serde = { workspace = true }

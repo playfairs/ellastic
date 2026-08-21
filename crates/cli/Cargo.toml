@@ -1,0 +1,67 @@
+[package]
+name = "ellastic-cli"
+version = "0.1.0"
+edition = "2024"
+description = "CLI interface for Ellastic multimedia databending toolkit"
+license = "GPL-3.0"
+authors = ["playfairs"]
+repository = "https://github.com/playfairs/ellastic"
+homepage = "https://tiffiny.org"
+rust-version = "1.85.0"
+
+[dependencies]
+ellastic-core = { path = "../core" }
+ellastic-errors = { path = "../errors" }
+ellastic-config = { path = "../config" }
+ellastic-logging = { path = "../logging" }
+ellastic-utils = { path = "../utils" }
+ellastic-bytes = { path = "../bytes" }
+ellastic-image = { path = "../image" }
+ellastic-audio = { path = "../audio" }
+ellastic-media = { path = "../media" }
+ellastic-glitch = { path = "../glitch" }
+ellastic-effects = { path = "../effects" }
+ellastic-pipeline = { path = "../pipeline" }
+ellastic-lua = { path = "../lua" }
+ellastic-project = { path = "../project" }
+ellastic-export = { path = "../export" }
+ellastic-ui = { path = "../ui" }
+
+# CLI dependencies
+clap = { version = "4.4", features = [
+  "derive",
+  "env",
+  "color",
+  "suggestions",
+  "wrap_help",
+] }
+crossterm = "0.27"
+console = "0.15"
+indicatif = "0.17"
+dialoguer = "0.11"
+colored = "2.0"
+tabled = "0.14"
+textwrap = "0.16"
+anyhow = "1.0"
+thiserror = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+uuid = { version = "1.5", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+regex = "1.9"
+glob = "0.3"
+walkdir = "2.4"
+notify = "6.1"
+tokio = { version = "1.0", features = ["full"] }
+rayon = "1.8"
+parking_lot = "0.12"
+dashmap = "5.5"
+
+# Optional dependencies for enhanced features
+[features]
+default = ["full"]
+full = ["advanced", "plugins", "completion"]
+advanced = []
+plugins = []
+completion = []

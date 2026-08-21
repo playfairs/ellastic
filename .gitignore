@@ -1,0 +1,172 @@
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Configuration
+config.toml
+*.local
+.env
+
+# Build artifacts
+/build/
+/dist/
+/out/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Test files
+test_data/
+test_outputs/
+
+# User data
+user_data/
+projects/
+exports/
+*.elastic
+
+# Backup files
+*.bak
+*.backup
+
+# Compiled binaries
+*.exe
+*.dmg
+*.deb
+*.rpm
+
+# Documentation build
+/docs/book/
+/target/doc/
+
+# Profiling data
+*.prof
+*.perf
+
+# Coverage reports
+tarpaulin-report.html
+cobertura.xml
+lcov.info
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Media files (test files)
+test_images/
+test_audio/
+test_video/
+*.jpg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.wav
+*.mp3
+*.ogg
+*.flac
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Plugin files
+plugins/
+*.so
+*.dll
+*.dylib
+
+# Script files
+scripts/
+*.lua
+*.py
+*.sh
+
+# Documentation artifacts
+*.pdf
+*.md.bak
+
+# Rust analyzer
+.rust-analyzer/
+
+# Clippy output
+clippy.toml.backup
+
+# Rustfmt output
+rustfmt.toml.backup
+
+# Cargo cache
+.cargo/
+
+# Local development
+.local/
+dev/
+debug/
+
+# Performance data
+perf.data
+flamegraph.svg
+
+# Security
+*.pem
+*.key
+*.crt
+*.p12
+
+# Node modules (if any web frontend)
+node_modules/
+
+# Package files
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# Editor backup files
+#*#
+.#*
+*.orig
+*.rej
+
+# Vim swap files
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Project specific
+elastic_workspace/
+elastic_cache/
+elastic_logs/
+elastic_config/
+elastic_plugins/

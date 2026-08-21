@@ -1,0 +1,17 @@
+[package]
+name = "ellastic-codecs"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0"
+authors = ["playfairs"]
+repository = "https://github.com/playfairs/ellastic"
+homepage = "https://tiffiny.org"
+
+[dependencies]
+ellastic-errors = { path = "../errors" }
+ellastic-utils = { path = "../utils" }
+ellastic-bytes = { path = "../bytes" }
+ellastic-image = { path = "../image" }
+ellastic-audio = { path = "../audio" }
+ellastic-media = { path = "../media" }
+serde = { workspace = true }

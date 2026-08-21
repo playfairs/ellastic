@@ -1,0 +1,34 @@
+msrv = "1.75"
+warn-on-all-warnings = true
+allow-dirty = true
+allow-expect-in-tests = true
+allow-unwrap-in-tests = true
+allow-panic-in-tests = true
+
+[[lints.clippy]]
+level = "deny"
+name = "unwrap_used"
+
+[[lints.clippy]]
+level = "deny"
+name = "expect_used"
+
+[[lints.clippy]]
+level = "deny"
+name = "panic"
+
+[[lints.clippy]]
+level = "deny"
+name = "unimplemented"
+
+[[lints.clippy]]
+level = "deny"
+name = "todo"
+
+[[lints.clippy]]
+level = "deny"
+name = "unreachable"
+
+[[lints.clippy]]
+level = "deny"
+name = "indexing_slicing"
