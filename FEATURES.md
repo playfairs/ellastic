@@ -1415,7 +1415,7 @@ Format support should not be considered complete merely because a file can be op
 
 ## Phase 0: Foundation
 
-* [ ] Project architecture
+* [X] Project architecture (Base files)
 * [ ] Media abstraction
 * [ ] File loading
 * [ ] File writing
@@ -1601,6 +1601,3 @@ The interesting part of databending is not simply making a file look broken.
 It is exploring what happens when the assumptions made by digital media formats are deliberately violated, transformed, recombined, and reconstructed.
 
 Ellastic should provide the tools necessary to experiment with those boundaries while keeping the process controllable, inspectable, and reproducible.
-
-> **Break the data. Observe the result. Layer the transformation. Repeat.**
-
