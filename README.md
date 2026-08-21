@@ -22,3 +22,5 @@ Ellastic treats media as data that can be modified, transformed, and corrupted t
 >[!IMPORTANT]
 > Ellastic is experimental and still in development.
 > Expect broken files. That's sort of the point.
+
+READ [FEATURES.md](./FEATURES.md) for the full list of Features Ellastic will have.
